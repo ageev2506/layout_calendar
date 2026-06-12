@@ -12,6 +12,7 @@ $calendar-width: ($day-size * $columns-count) +
 $days-of-week: ('mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun');
 
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -39,12 +40,12 @@ body {
     position: relative;
 
     transition:
-      background-color 0.2s ease,
-      transform 0.2s ease;
+      background-color 0.2s ease all,
+      transform 0.2s ease all;
 
     &:hover {
       background-color: #ddd;
-      transform: translateY(-9px);
+      transform: translate(0, -20px);
     }
 
     @for $i from 1 through 31 {
