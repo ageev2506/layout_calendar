@@ -1,5 +1,7 @@
 # Calendar
 
+
+
 Display a calendar in the middle of the screen (both horizontally and vertically). Use SCSS and follow BEM. Don't use Javascript.
 
 - Write styles in `src/styles/main.scss` instead of `src/style.css`.
